@@ -11,9 +11,6 @@ export default function App() {
       <div className="taskListDiv">
         <Tasklist />
       </div>
-      <div className="taskListDiv">
-        <Tasklist />
-      </div>
     </div>
   )
 }
