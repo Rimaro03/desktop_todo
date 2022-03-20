@@ -16,7 +16,6 @@ export default function Calendar() {
       <CalendarPicker
         date={selectedDate}
         onChange={handleDateChange}
-        shouldDisableDate={(date) => date.getDay() === 0 || date.getDay() === 6}
         showDaysOutsideCurrentMonth={true}
       />
     </LocalizationProvider>

@@ -1,23 +1,25 @@
 body{
     background-color: #f2f2f2;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#root{
+    align-items: center;
 }
 
 .main{
-    width: 100%;
-    height: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 5%;
+    margin: auto;
 }
 
 .calendar{
-    width: 40%;
-}
-
-.taskListDiv{
-    width: 20%;
+    width: 100%;
 }
 
 .MuiCalendarPicker-root{
@@ -29,23 +31,36 @@ body{
 }
 
 .lists{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
-.list{
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.50);
+.taskList,
+.completedList{
+    min-height: 70vh;
+    width: 30%;
+    max-width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    padding: 6%;
+    margin: auto;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.50);
+    background-color: #e1e2e2 ;
 }
 
 .taskItem{
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    border-radius: 2px;
+    width: 100%;
+    padding: 5%;
     text-align: center;
-    margin: 10%;
-    padding: 6%;
+    background-color: #f3f3f3;
+    word-wrap: break-word;
+}
+
+.taskItem:hover{
+    cursor: pointer;
 }

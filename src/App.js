@@ -8,9 +8,7 @@ export default function App() {
       <div className="calendar">
         <Calendar />
       </div>
-      <div className="taskListDiv">
-        <Tasklist />
-      </div>
+      <Tasklist />
     </div>
   )
 }
